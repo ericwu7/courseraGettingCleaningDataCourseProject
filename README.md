@@ -1,5 +1,5 @@
 #Course Project ReadMe
-========================================
+---------------------------
 run_analysis.R is the R script used to load and create the AvgMeanStdBySubjectActivity.txt output.
 
 The output of the script has also been included: AvgMeanStdBySubjectActivity.txt
