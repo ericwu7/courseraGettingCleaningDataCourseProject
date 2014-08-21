@@ -4,207 +4,216 @@ Any transformations or work that you performed to clean up the data
 
 
 ## Code book
-### subjectID
-     Field description goes here
+     The following description of the fields is taken from the features_info.txt file from the source data, which can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+	 
+> The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+> Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
-### activityName
+> Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+> These signals were used to estimate variables of the feature vector for each pattern:  
+> '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+#### subjectID
      Field description goes here
 
-### tBodyAccMeanXAvg
+#### activityName
      Field description goes here
 
-### tBodyAccMeanYAvg
+#### tBodyAccMeanXAvg
      Field description goes here
 
-### tBodyAccMeanZAvg
+#### tBodyAccMeanYAvg
      Field description goes here
 
-### tBodyAccStdXAvg
+#### tBodyAccMeanZAvg
      Field description goes here
 
-### tBodyAccStdYAvg
+#### tBodyAccStdXAvg
      Field description goes here
 
-### tBodyAccStdZAvg
+#### tBodyAccStdYAvg
      Field description goes here
 
-### tGravityAccMeanXAvg
+#### tBodyAccStdZAvg
      Field description goes here
 
-### tGravityAccMeanYAvg
+#### tGravityAccMeanXAvg
      Field description goes here
 
-### tGravityAccMeanZAvg
+#### tGravityAccMeanYAvg
      Field description goes here
 
-### tGravityAccStdXAvg
+#### tGravityAccMeanZAvg
      Field description goes here
 
-### tGravityAccStdYAvg
+#### tGravityAccStdXAvg
      Field description goes here
 
-### tGravityAccStdZAvg
+#### tGravityAccStdYAvg
      Field description goes here
 
-### tBodyAccJerkMeanXAvg
+#### tGravityAccStdZAvg
      Field description goes here
 
-### tBodyAccJerkMeanYAvg
+#### tBodyAccJerkMeanXAvg
      Field description goes here
 
-### tBodyAccJerkMeanZAvg
+#### tBodyAccJerkMeanYAvg
      Field description goes here
 
-### tBodyAccJerkStdXAvg
+#### tBodyAccJerkMeanZAvg
      Field description goes here
 
-### tBodyAccJerkStdYAvg
+#### tBodyAccJerkStdXAvg
      Field description goes here
 
-### tBodyAccJerkStdZAvg
+#### tBodyAccJerkStdYAvg
      Field description goes here
 
-### tBodyGyroMeanXAvg
+#### tBodyAccJerkStdZAvg
      Field description goes here
 
-### tBodyGyroMeanYAvg
+#### tBodyGyroMeanXAvg
      Field description goes here
 
-### tBodyGyroMeanZAvg
+#### tBodyGyroMeanYAvg
      Field description goes here
 
-### tBodyGyroStdXAvg
+#### tBodyGyroMeanZAvg
      Field description goes here
 
-### tBodyGyroStdYAvg
+#### tBodyGyroStdXAvg
      Field description goes here
 
-### tBodyGyroStdZAvg
+#### tBodyGyroStdYAvg
      Field description goes here
 
-### tBodyGyroJerkMeanXAvg
+#### tBodyGyroStdZAvg
      Field description goes here
 
-### tBodyGyroJerkMeanYAvg
+#### tBodyGyroJerkMeanXAvg
      Field description goes here
 
-### tBodyGyroJerkMeanZAvg
+#### tBodyGyroJerkMeanYAvg
      Field description goes here
 
-### tBodyGyroJerkStdXAvg
+#### tBodyGyroJerkMeanZAvg
      Field description goes here
 
-### tBodyGyroJerkStdYAvg
+#### tBodyGyroJerkStdXAvg
      Field description goes here
 
-### tBodyGyroJerkStdZAvg
+#### tBodyGyroJerkStdYAvg
      Field description goes here
 
-### tBodyAccMagMeanAvg
+#### tBodyGyroJerkStdZAvg
      Field description goes here
 
-### tBodyAccMagStdAvg
+#### tBodyAccMagMeanAvg
      Field description goes here
 
-### tGravityAccMagMeanAvg
+#### tBodyAccMagStdAvg
      Field description goes here
 
-### tGravityAccMagStdAvg
+#### tGravityAccMagMeanAvg
      Field description goes here
 
-### tBodyAccJerkMagMeanAvg
+#### tGravityAccMagStdAvg
      Field description goes here
 
-### tBodyAccJerkMagStdAvg
+#### tBodyAccJerkMagMeanAvg
      Field description goes here
 
-### tBodyGyroMagMeanAvg
+#### tBodyAccJerkMagStdAvg
      Field description goes here
 
-### tBodyGyroMagStdAvg
+#### tBodyGyroMagMeanAvg
      Field description goes here
 
-### tBodyGyroJerkMagMeanAvg
+#### tBodyGyroMagStdAvg
      Field description goes here
 
-### tBodyGyroJerkMagStdAvg
+#### tBodyGyroJerkMagMeanAvg
      Field description goes here
 
-### fBodyAccMeanXAvg
+#### tBodyGyroJerkMagStdAvg
      Field description goes here
 
-### fBodyAccMeanYAvg
+#### fBodyAccMeanXAvg
      Field description goes here
 
-### fBodyAccMeanZAvg
+#### fBodyAccMeanYAvg
      Field description goes here
 
-### fBodyAccStdXAvg
+#### fBodyAccMeanZAvg
      Field description goes here
 
-### fBodyAccStdYAvg
+#### fBodyAccStdXAvg
      Field description goes here
 
-### fBodyAccStdZAvg
+#### fBodyAccStdYAvg
      Field description goes here
 
-### fBodyAccJerkMeanXAvg
+#### fBodyAccStdZAvg
      Field description goes here
 
-### fBodyAccJerkMeanYAvg
+#### fBodyAccJerkMeanXAvg
      Field description goes here
 
-### fBodyAccJerkMeanZAvg
+#### fBodyAccJerkMeanYAvg
      Field description goes here
 
-### fBodyAccJerkStdXAvg
+#### fBodyAccJerkMeanZAvg
      Field description goes here
 
-### fBodyAccJerkStdYAvg
+#### fBodyAccJerkStdXAvg
      Field description goes here
 
-### fBodyAccJerkStdZAvg
+#### fBodyAccJerkStdYAvg
      Field description goes here
 
-### fBodyGyroMeanXAvg
+#### fBodyAccJerkStdZAvg
      Field description goes here
 
-### fBodyGyroMeanYAvg
+#### fBodyGyroMeanXAvg
      Field description goes here
 
-### fBodyGyroMeanZAvg
+#### fBodyGyroMeanYAvg
      Field description goes here
 
-### fBodyGyroStdXAvg
+#### fBodyGyroMeanZAvg
      Field description goes here
 
-### fBodyGyroStdYAvg
+#### fBodyGyroStdXAvg
      Field description goes here
 
-### fBodyGyroStdZAvg
+#### fBodyGyroStdYAvg
      Field description goes here
 
-### fBodyAccMagMeanAvg
+#### fBodyGyroStdZAvg
      Field description goes here
 
-### fBodyAccMagStdAvg
+#### fBodyAccMagMeanAvg
      Field description goes here
 
-### fBodyBodyAccJerkMagMeanAvg
+#### fBodyAccMagStdAvg
      Field description goes here
 
-### fBodyBodyAccJerkMagStdAvg
+#### fBodyBodyAccJerkMagMeanAvg
      Field description goes here
 
-### fBodyBodyGyroMagMeanAvg
+#### fBodyBodyAccJerkMagStdAvg
      Field description goes here
 
-### fBodyBodyGyroMagStdAvg
+#### fBodyBodyGyroMagMeanAvg
      Field description goes here
 
-### fBodyBodyGyroJerkMagMeanAvg
+#### fBodyBodyGyroMagStdAvg
      Field description goes here
 
-### fBodyBodyGyroJerkMagStdAvg
+#### fBodyBodyGyroJerkMagMeanAvg
      Field description goes here
 
+#### fBodyBodyGyroJerkMagStdAvg
+     Field description goes here
