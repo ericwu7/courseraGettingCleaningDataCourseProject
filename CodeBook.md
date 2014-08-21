@@ -14,7 +14,7 @@ The files were extracted into a folder called **UCI HAR Dataset**. Then the foll
 All the files are space delimited, so they were loaded into individual data frames in R using the **read.table** function.
 
 The X_test.txt, subject_test.txt, and y_test.txt data sets each contain data for the same 2,947 observations.
-They were combined into one data frame and the following column names were updated to be more descriptive:
+They were combined into one data frame and the following "subject" and "y" column names were updated to be more descriptive:
 - subjectID
 - activityID
 
@@ -29,24 +29,27 @@ The column names in the features.txt file were used to appropriately label the c
 
 Only the subjectID, activityID, mean, and standard deviation variables were extracted from **all.data.df** using the following command:
 ```     
-	 grep("mean\\(\\)|std\\(\\)"
+	 grep("mean\\(\\)|std\\(\\)", colnames(all.data.df))
 ```
 Additionally, the column names were cleaned up by removing parenthesis, hyphens, and the strings "mean" and "std" were made to have initial capitalization.
 
 The resulting data frame **mean.std.data.df** was transformed using the *merge* function of the *plyr* package to replace the activityID with activityName.
 The following is a mapping of the activityID to activityName:
-activityID|activityName
-----------|------------
-1|WALKING
-2|WALKING_UPSTAIRS
-3|WALKING_DOWNSTAIRS
-4|SITTING
-5|STANDING
-6|LAYING
 
+|activityID|activityName|
+|----------|------------|
+|1|WALKING|
+|2|WALKING_UPSTAIRS|
+|3|WALKING_DOWNSTAIRS|
+|4|SITTING|
+|5|STANDING|
+|6|LAYING|
 
+The **melt** and **dcast** functions in the **reshape2** package were used to transform the mean.std.data.df so that the mean would be calculated for each variable per subjectID and activityName combination
 
+Since the variables are now all averages, the column names were renamed to have "Avg" as a suffix to reflect the data reflect are averages of the original variables.
 
+Finally, the resulting data set from the **dcast** function is written to a file in the working directory using the **write.table** command.
 
 
 
