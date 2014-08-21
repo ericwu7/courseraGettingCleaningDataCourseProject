@@ -27,10 +27,14 @@ The train and test data frames were then appended to create a new data frame **a
 
 The column names in the *features.txt* file were used to appropriately label the column headers **all.data.df**.
 
-Only the subjectID, activityID, mean, and standard deviation variables were extracted from **all.data.df** using the following command:
+In addition to the subjectID and activityID fields, the mean, and standard deviation variables were extracted from **all.data.df** using the following command:
 ```     
 	 grep("mean\\(\\)|std\\(\\)", colnames(all.data.df))
 ```
+
+Based on Jim Medlock's post on *Tidy Data set 1 and 2 specs*, the *angle(...,mean)* variables were not included because they do not appear to be actual mean or standard deviation values. 
+Here is the URL being referenced: https://class.coursera.org/getdata-006/forum/thread?thread_id=196
+
 Additionally, the column names were cleaned up by removing parenthesis and hyphens, and the strings "mean" and "std" were made to have initial capitalization.
 
 The resulting data frame **mean.std.data.df** was transformed using the *merge* function of the **plyr** package to replace the activityID with activityName.
