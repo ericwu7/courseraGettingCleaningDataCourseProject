@@ -1,17 +1,17 @@
 ## Study Design
 The source data was downloaded as a zip file from the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-The files were extracted into a folder called *UCI HAR Dataset*. Then the following text files were copied into the R working directory:
+The files were extracted into a folder called **UCI HAR Dataset**. Then the following text files were copied into the R working directory:
 
-- \UCI HAR Dataset\activity_labels.txt
-- \UCI HAR Dataset\features.txt
-- \UCI HAR Dataset\test\subject_test.txt
-- \UCI HAR Dataset\test\X_test.txt
-- \UCI HAR Dataset\test\y_test.txt
-- \UCI HAR Dataset\train\subject_train.txt
-- \UCI HAR Dataset\train\X_train.txt
-- \UCI HAR Dataset\train\y_train.txt
+- \UCI HAR Dataset\**activity_labels.txt**
+- \UCI HAR Dataset\**features.txt**
+- \UCI HAR Dataset\test\**subject_test.txt**
+- \UCI HAR Dataset\test\**X_test.txt**
+- \UCI HAR Dataset\test\**y_test.txt**
+- \UCI HAR Dataset\train\**subject_train.txt**
+- \UCI HAR Dataset\train\**X_train.txt**
+- \UCI HAR Dataset\train\**y_train.txt**
 
-All the files are space delimited, so they were loaded into individual data frames in R using the read.table function.
+All the files are space delimited, so they were loaded into individual data frames in R using the **read.table** function.
 
 The X_test.txt, subject_test.txt, and y_test.txt data sets each contain data for the same 2,947 observations.
 They were combined into one data frame and the following column names were updated to be more descriptive:
@@ -28,8 +28,9 @@ The train and test data frames were then appended to create a new data frame **a
 The column names in the features.txt file were used to appropriately label the column headers **all.data.df**.
 
 Only the subjectID, activityID, mean, and standard deviation variables were extracted from **all.data.df** using the following command:
-     grep("mean\\(\\)|std\\(\\)"
-
+```     
+	 grep("mean\\(\\)|std\\(\\)"
+```
 Additionally, the column names were cleaned up by removing parenthesis, hyphens, and the strings "mean" and "std" were made to have initial capitalization.
 
 The resulting data frame **mean.std.data.df** was transformed using the *merge* function of the *plyr* package to replace the activityID with activityName.
