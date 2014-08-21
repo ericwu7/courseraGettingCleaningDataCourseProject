@@ -57,11 +57,15 @@ The tidy data set has data for 30 subjects each performing 6 activities = 180 ro
 This Code Book describes the variables found in the output of run_analysis.R.
 This assumes a basic understanding of the source data of which detailed descriptions can be found in the **features_info.txt** file in the following location:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+Each row represents the averages for one subject for one activity. 30 subjects performed 6 activities = 180 rows.
+
 #### subjectID
-     Subject ID number as sourced from subject_test.txt and subject_train.txt. Possible values range from 1 - 30.
+     Subject ID number as sourced from subject_test.txt and subject_train.txt. 
+	 Possible values range from 1 - 30.
 
 #### activityName
-     Name of the activity performed by the subject. Possible values include:
+     Name of the activity performed by the subject. 
+	 Possible values include:
      - WALKING
      - WALKING_UPSTAIRS
      - WALKING_DOWNSTAIRS
