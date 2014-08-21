@@ -84,16 +84,18 @@
 
 # table(mean.std.data.df$subjectID)  # this is check to make sure subjectID is populated properly
 
-# use the reshape2 package: melt and dcast functions to do the same thing to create tidy2.df
+# use the reshape2 package: melt and dcast functions to do the same thing to create avg.mean.std.df
   library(reshape2)
   datamelt.df <- melt(mean.std.data.df, id=c("subjectID","activityName"), measure.vars=colnames(mean.std.data.df)[3:68])
   avg.mean.std.df <- dcast(datamelt.df, subjectID + activityName ~ variable, mean)
+
 # append "Avg" to each variable name since it's now the average of the mean/std
   colnames(avg.mean.std.df)[3:68] <- paste(colnames(avg.mean.std.df)[3:68], "Avg", sep="") 
 
+# write table out to file called AvgMeanStdBySubjectActivity.txt
   write.table(avg.mean.std.df, file="AvgMeanStdBySubjectActivity.txt", row.name=FALSE)
 
-## option 2. not used.
+## option 2. di not use but keeping here to preserve alternative method
 #tidy.df <-  as.data.frame(t(sapply(split(mean.std.data.df[, 3:68], list(mean.std.data.df$subjectID, mean.std.data.df$activityName)), colMeans)))  
 # nrow(tidy.df)  # 180
 
