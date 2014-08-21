@@ -5,7 +5,7 @@ Any transformations or work that you performed to clean up the data
 
 ## Code book
 This Code Book describes the variables found in the output of run_analysis.R.
-This assumes a basic understanding of the source data, with detailed descriptions which can be found in the features_info.txt file in the following location:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+This assumes a basic understanding of the source data of which detailed descriptions can be found in the *features_info.txt* file in the following location:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 #### subjectID
      Subject ID number as sourced from subject_test.txt and subject_train.txt. Range from 1 - 30.
