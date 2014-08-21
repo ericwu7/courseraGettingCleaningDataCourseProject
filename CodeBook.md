@@ -16,205 +16,211 @@ The following description of the fields is taken from the features_info.txt file
 > '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 #### subjectID
-     Field description goes here
+     Subject ID number as sourced from subject_test.txt and subject_train.txt. Range from 1 - 30.
 
 #### activityName
-     Field description goes here
+     Name of the activity performed by the subject. 
+     - WALKING
+     - WALKING_UPSTAIRS
+     - WALKING_DOWNSTAIRS
+     - SITTING
+     - STANDING
+     - LAYING
 
 #### tBodyAccMeanXAvg
-     Field description goes here
+     Average of the tBodyAccMeanX signal. (numeric value)
 
 #### tBodyAccMeanYAvg
-     Field description goes here
+     Average of the tBodyAccMeanY signal. (numeric value)
 
 #### tBodyAccMeanZAvg
-     Field description goes here
+     Average of the tBodyAccMeanZ signal. (numeric value)
 
 #### tBodyAccStdXAvg
-     Field description goes here
+     Average of the tBodyAccStdX signal. (numeric value)
 
 #### tBodyAccStdYAvg
-     Field description goes here
+     Average of the tBodyAccStdY signal. (numeric value)
 
 #### tBodyAccStdZAvg
-     Field description goes here
+     Average of the tBodyAccStdZ signal. (numeric value)
 
 #### tGravityAccMeanXAvg
-     Field description goes here
+     Average of the tGravityAccMeanX signal. (numeric value)
 
 #### tGravityAccMeanYAvg
-     Field description goes here
+     Average of the tGravityAccMeanY signal. (numeric value)
 
 #### tGravityAccMeanZAvg
-     Field description goes here
+     Average of the tGravityAccMeanZ signal. (numeric value)
 
 #### tGravityAccStdXAvg
-     Field description goes here
+     Average of the tGravityAccStdX signal. (numeric value)
 
 #### tGravityAccStdYAvg
-     Field description goes here
+     Average of the tGravityAccStdY signal. (numeric value)
 
 #### tGravityAccStdZAvg
-     Field description goes here
+     Average of the tGravityAccStdZ signal. (numeric value)
 
 #### tBodyAccJerkMeanXAvg
-     Field description goes here
+     Average of the tBodyAccJerkMeanX signal. (numeric value)
 
 #### tBodyAccJerkMeanYAvg
-     Field description goes here
+     Average of the tBodyAccJerkMeanY signal. (numeric value)
 
 #### tBodyAccJerkMeanZAvg
-     Field description goes here
+     Average of the tBodyAccJerkMeanZ signal. (numeric value)
 
 #### tBodyAccJerkStdXAvg
-     Field description goes here
+     Average of the tBodyAccJerkStdX signal. (numeric value)
 
 #### tBodyAccJerkStdYAvg
-     Field description goes here
+     Average of the tBodyAccJerkStdY signal. (numeric value)
 
 #### tBodyAccJerkStdZAvg
-     Field description goes here
+     Average of the tBodyAccJerkStdZ signal. (numeric value)
 
 #### tBodyGyroMeanXAvg
-     Field description goes here
+     Average of the tBodyGyroMeanX signal. (numeric value)
 
 #### tBodyGyroMeanYAvg
-     Field description goes here
+     Average of the tBodyGyroMeanY signal. (numeric value)
 
 #### tBodyGyroMeanZAvg
-     Field description goes here
+     Average of the tBodyGyroMeanZ signal. (numeric value)
 
 #### tBodyGyroStdXAvg
-     Field description goes here
+     Average of the tBodyGyroStdX signal. (numeric value)
 
 #### tBodyGyroStdYAvg
-     Field description goes here
+     Average of the tBodyGyroStdY signal. (numeric value)
 
 #### tBodyGyroStdZAvg
-     Field description goes here
+     Average of the tBodyGyroStdZ signal. (numeric value)
 
 #### tBodyGyroJerkMeanXAvg
-     Field description goes here
+     Average of the tBodyGyroJerkMeanX signal. (numeric value)
 
 #### tBodyGyroJerkMeanYAvg
-     Field description goes here
+     Average of the tBodyGyroJerkMeanY signal. (numeric value)
 
 #### tBodyGyroJerkMeanZAvg
-     Field description goes here
+     Average of the tBodyGyroJerkMeanZ signal. (numeric value)
 
 #### tBodyGyroJerkStdXAvg
-     Field description goes here
+     Average of the tBodyGyroJerkStdX signal. (numeric value)
 
 #### tBodyGyroJerkStdYAvg
-     Field description goes here
+     Average of the tBodyGyroJerkStdY signal. (numeric value)
 
 #### tBodyGyroJerkStdZAvg
-     Field description goes here
+     Average of the tBodyGyroJerkStdZ signal. (numeric value)
 
 #### tBodyAccMagMeanAvg
-     Field description goes here
+     Average of the tBodyAccMagMean signal. (numeric value)
 
 #### tBodyAccMagStdAvg
-     Field description goes here
+     Average of the tBodyAccMagStd signal. (numeric value)
 
 #### tGravityAccMagMeanAvg
-     Field description goes here
+     Average of the tGravityAccMagMean signal. (numeric value)
 
 #### tGravityAccMagStdAvg
-     Field description goes here
+     Average of the tGravityAccMagStd signal. (numeric value)
 
 #### tBodyAccJerkMagMeanAvg
-     Field description goes here
+     Average of the tBodyAccJerkMagMean signal. (numeric value)
 
 #### tBodyAccJerkMagStdAvg
-     Field description goes here
+     Average of the tBodyAccJerkMagStd signal. (numeric value)
 
 #### tBodyGyroMagMeanAvg
-     Field description goes here
+     Average of the tBodyGyroMagMean signal. (numeric value)
 
 #### tBodyGyroMagStdAvg
-     Field description goes here
+     Average of the tBodyGyroMagStd signal. (numeric value)
 
 #### tBodyGyroJerkMagMeanAvg
-     Field description goes here
+     Average of the tBodyGyroJerkMagMean signal. (numeric value)
 
 #### tBodyGyroJerkMagStdAvg
-     Field description goes here
+     Average of the tBodyGyroJerkMagStd signal. (numeric value)
 
 #### fBodyAccMeanXAvg
-     Field description goes here
+     Average of the fBodyAccMeanX signal. (numeric value)
 
 #### fBodyAccMeanYAvg
-     Field description goes here
+     Average of the fBodyAccMeanY signal. (numeric value)
 
 #### fBodyAccMeanZAvg
-     Field description goes here
+     Average of the fBodyAccMeanZ signal. (numeric value)
 
 #### fBodyAccStdXAvg
-     Field description goes here
+     Average of the fBodyAccStdX signal. (numeric value)
 
 #### fBodyAccStdYAvg
-     Field description goes here
+     Average of the fBodyAccStdY signal. (numeric value)
 
 #### fBodyAccStdZAvg
-     Field description goes here
+     Average of the fBodyAccStdZ signal. (numeric value)
 
 #### fBodyAccJerkMeanXAvg
-     Field description goes here
+     Average of the fBodyAccJerkMeanX signal. (numeric value)
 
 #### fBodyAccJerkMeanYAvg
-     Field description goes here
+     Average of the fBodyAccJerkMeanY signal. (numeric value)
 
 #### fBodyAccJerkMeanZAvg
-     Field description goes here
+     Average of the fBodyAccJerkMeanZ signal. (numeric value)
 
 #### fBodyAccJerkStdXAvg
-     Field description goes here
+     Average of the fBodyAccJerkStdX signal. (numeric value)
 
 #### fBodyAccJerkStdYAvg
-     Field description goes here
+     Average of the fBodyAccJerkStdY signal. (numeric value)
 
 #### fBodyAccJerkStdZAvg
-     Field description goes here
+     Average of the fBodyAccJerkStdZ signal. (numeric value)
 
 #### fBodyGyroMeanXAvg
-     Field description goes here
+     Average of the fBodyGyroMeanX signal. (numeric value)
 
 #### fBodyGyroMeanYAvg
-     Field description goes here
+     Average of the fBodyGyroMeanY signal. (numeric value)
 
 #### fBodyGyroMeanZAvg
-     Field description goes here
+     Average of the fBodyGyroMeanZ signal. (numeric value)
 
 #### fBodyGyroStdXAvg
-     Field description goes here
+     Average of the fBodyGyroStdX signal. (numeric value)
 
 #### fBodyGyroStdYAvg
-     Field description goes here
+     Average of the fBodyGyroStdY signal. (numeric value)
 
 #### fBodyGyroStdZAvg
-     Field description goes here
+     Average of the fBodyGyroStdZ signal. (numeric value)
 
 #### fBodyAccMagMeanAvg
-     Field description goes here
+     Average of the fBodyAccMagMean signal. (numeric value)
 
 #### fBodyAccMagStdAvg
-     Field description goes here
+     Average of the fBodyAccMagStd signal. (numeric value)
 
 #### fBodyBodyAccJerkMagMeanAvg
-     Field description goes here
+     Average of the fBodyBodyAccJerkMagMean signal. (numeric value)
 
 #### fBodyBodyAccJerkMagStdAvg
-     Field description goes here
+     Average of the fBodyBodyAccJerkMagStd signal. (numeric value)
 
 #### fBodyBodyGyroMagMeanAvg
-     Field description goes here
+     Average of the fBodyBodyGyroMagMean signal. (numeric value)
 
 #### fBodyBodyGyroMagStdAvg
-     Field description goes here
+     Average of the fBodyBodyGyroMagStd signal. (numeric value)
 
 #### fBodyBodyGyroJerkMagMeanAvg
-     Field description goes here
+     Average of the fBodyBodyGyroJerkMagMean signal. (numeric value)
 
 #### fBodyBodyGyroJerkMagStdAvg
-     Field description goes here
+     Average of the fBodyBodyGyroJerkMagStd signal. (numeric value)
