@@ -51,7 +51,7 @@ Since the variables at this point represent average values, the column names of 
 
 Finally, the now tidy data set **avg.mean.std.df** is written to a file in the working directory using the **write.table** command.
 
-
+The tidy data set has data for 30 subjects each performing 6 activities = 180 rows. This output is confirmed in Wendel Hope's post in **Tidy Data Set 1 and 2 specs**: https://class.coursera.org/getdata-006/forum/thread?thread_id=196
 
 ## Code book
 This Code Book describes the variables found in the output of run_analysis.R.
