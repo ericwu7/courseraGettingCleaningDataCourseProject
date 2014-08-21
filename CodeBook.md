@@ -2,38 +2,38 @@
 The source data was downloaded as a zip file from the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 The files were extracted into a folder called **UCI HAR Dataset**. Then the following text files were copied into the R working directory:
 
-- \UCI HAR Dataset\**activity_labels.txt**
-- \UCI HAR Dataset\**features.txt**
-- \UCI HAR Dataset\test\**subject_test.txt**
-- \UCI HAR Dataset\test\**X_test.txt**
-- \UCI HAR Dataset\test\**y_test.txt**
-- \UCI HAR Dataset\train\**subject_train.txt**
-- \UCI HAR Dataset\train\**X_train.txt**
-- \UCI HAR Dataset\train\**y_train.txt**
+- \UCI HAR Dataset\activity_labels.txt
+- \UCI HAR Dataset\features.txt
+- \UCI HAR Dataset\test\subject_test.txt*
+- \UCI HAR Dataset\test\X_test.txt
+- \UCI HAR Dataset\test\y_test.txt
+- \UCI HAR Dataset\train\subject_train.txt
+- \UCI HAR Dataset\train\X_train.txt
+- \UCI HAR Dataset\train\y_train.txt
 
-All the files are space delimited, so they were loaded into individual data frames in R using the **read.table** function.
+All the files are space (" ") delimited, so they were loaded into individual data frames in R using the **read.table** function.
 
-The X_test.txt, subject_test.txt, and y_test.txt data sets each contain data for the same 2,947 observations.
-They were combined into one data frame and the following "subject" and "y" column names were updated to be more descriptive:
+Test data: The *X_test.txt*, *subject_test.txt*, and *y_test.txt* data sets each contain data for the same 2,947 observations.
+They were combined into one data frame and the "subject" and "y" column names were updated to be more descriptive:
 - subjectID
 - activityID
 
-The X_train.txt, subject_train.txt, and y_train.txt data sets each contain data for the same 7,352 observations.
-They were combined into one data frame and the following column names were updated to be more descriptive:
+Train data: The *X_train.txt*, *subject_train.txt*, and *y_train.txt* data sets each contain data for the same 7,352 observations.
+They were combined into one data frame and the "subject" and "y" column names were updated to be more descriptive:
 - subjectID
 - activityID
 
 The train and test data frames were then appended to create a new data frame **all.data.df** resulting in 10,299 total rows.
 
-The column names in the features.txt file were used to appropriately label the column headers **all.data.df**.
+The column names in the *features.txt* file were used to appropriately label the column headers **all.data.df**.
 
 Only the subjectID, activityID, mean, and standard deviation variables were extracted from **all.data.df** using the following command:
 ```     
 	 grep("mean\\(\\)|std\\(\\)", colnames(all.data.df))
 ```
-Additionally, the column names were cleaned up by removing parenthesis, hyphens, and the strings "mean" and "std" were made to have initial capitalization.
+Additionally, the column names were cleaned up by removing parenthesis and hyphens, and the strings "mean" and "std" were made to have initial capitalization.
 
-The resulting data frame **mean.std.data.df** was transformed using the *merge* function of the *plyr* package to replace the activityID with activityName.
+The resulting data frame **mean.std.data.df** was transformed using the *merge* function of the **plyr** package to replace the activityID with activityName.
 The following is a mapping of the activityID to activityName:
 
 |activityID|activityName|
@@ -45,11 +45,11 @@ The following is a mapping of the activityID to activityName:
 |5|STANDING|
 |6|LAYING|
 
-The **melt** and **dcast** functions in the **reshape2** package were used to transform the mean.std.data.df so that the mean would be calculated for each variable per subjectID and activityName combination
+The **melt** and **dcast** functions in the **reshape2** package were used to transform the mean.std.data.df so that the mean would be calculated for each variable per subjectID and activityName combination. The resulting data frame is called **avg.mean.std.df**.
 
-Since the variables are now all averages, the column names were renamed to have "Avg" as a suffix to reflect the data reflect are averages of the original variables.
+Since the variables at this point represent average values, the column names of **avg.mean.std.df** were renamed to append "Avg" as a suffix to reflect this.
 
-Finally, the resulting data set from the **dcast** function is written to a file in the working directory using the **write.table** command.
+Finally, the now tidy data set **avg.mean.std.df** is written to a file in the working directory using the **write.table** command.
 
 
 
