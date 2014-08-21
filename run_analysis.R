@@ -1,3 +1,4 @@
+################################################################################
 # Description: This script loads Human Activity Recognition Using Smartphones 
 # Data Set and performs the steps described in the Course Project 
 # instructions, listed below:
@@ -18,6 +19,7 @@
 #  my tidy data set has 30 subjects each performing 6 activities = 180 rows
 # https://class.coursera.org/getdata-006/forum/thread?thread_id=196
 ################################################################################
+
 #  setwd("C:\\Users\\ewu3\\Documents\\Courses\\GettingAndCleaningData\\Project")
 
 # Assume the following files are in the working directory. The files are space delimited
@@ -76,8 +78,6 @@
 
 # Create a second, independent tidy data set with the average of each 
 # variable for each activity and each subject. 
-# class(mean.std.data.df$activityName)  # factor. good.
-# class(mean.std.data.df$subjectID)  # integer. need to change to factor
 
 # convert subjectID to a factor for using in split
   mean.std.data.df$subjectID <- as.factor(mean.std.data.df$subjectID)
@@ -95,7 +95,7 @@
 # write table out to file called AvgMeanStdBySubjectActivity.txt
   write.table(avg.mean.std.df, file="AvgMeanStdBySubjectActivity.txt", row.name=FALSE)
 
-## option 2. di not use but keeping here to preserve alternative method
+## option 2. did not use the following code but keeping here to preserve alternative method
 #tidy.df <-  as.data.frame(t(sapply(split(mean.std.data.df[, 3:68], list(mean.std.data.df$subjectID, mean.std.data.df$activityName)), colMeans)))  
 # nrow(tidy.df)  # 180
 
