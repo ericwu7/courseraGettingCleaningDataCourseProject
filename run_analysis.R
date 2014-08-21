@@ -18,7 +18,7 @@
 #  my tidy data set has 30 subjects each performing 6 activities = 180 rows
 # https://class.coursera.org/getdata-006/forum/thread?thread_id=196
 ################################################################################
-  setwd("C:\\Users\\ewu3\\Documents\\Courses\\GettingAndCleaningData\\Project")
+#  setwd("C:\\Users\\ewu3\\Documents\\Courses\\GettingAndCleaningData\\Project")
 
 # Assume the following files are in the working directory. The files are space delimited
 # X_test.txt
