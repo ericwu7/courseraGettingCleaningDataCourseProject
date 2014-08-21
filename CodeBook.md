@@ -11,7 +11,7 @@ The files were extracted into a folder called **UCI HAR Dataset**. Then the foll
 - \UCI HAR Dataset\train\X_train.txt
 - \UCI HAR Dataset\train\y_train.txt
 
-All the files are space (" ") delimited, so they were loaded into individual data frames in R using the **read.table** function.
+All the files are space (" ") delimited, so they were loaded into individual data frames in R using the *read.table* function.
 
 Test data: The *X_test.txt*, *subject_test.txt*, and *y_test.txt* data sets each contain data for the same 2,947 observations.
 They were combined into one data frame and the "subject" and "y" column names were updated to be more descriptive:
@@ -49,11 +49,11 @@ The following is a mapping of the activityID to activityName:
 |5|STANDING|
 |6|LAYING|
 
-The **melt** and **dcast** functions in the **reshape2** package were used to transform the mean.std.data.df so that the mean would be calculated for each variable per subjectID and activityName combination. The resulting data frame is called **avg.mean.std.df**.
+The *melt* and *dcast* functions in the **reshape2** package were used to transform the mean.std.data.df so that the mean would be calculated for each variable per subjectID and activityName combination. The resulting data frame is called **avg.mean.std.df**.
 
 Since the variables at this point represent average values, the column names of **avg.mean.std.df** were renamed to append "Avg" as a suffix to reflect this.
 
-Finally, the now tidy data set **avg.mean.std.df** is written to a file in the working directory using the **write.table** command.
+Finally, the now tidy data set **avg.mean.std.df** is written to a file in the working directory using the *write.table* command.
 
 The tidy data set has data for 30 subjects each performing 6 activities = 180 rows. This output is confirmed in Wendel Hope's post in **Tidy Data Set 1 and 2 specs**: https://class.coursera.org/getdata-006/forum/thread?thread_id=196
 
