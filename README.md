@@ -22,6 +22,8 @@ The code book that contains
 - **Code Book:** Description of the variables in the tidy data set created by run_analysis.R
 
 ##### Source Data
+The home page for the source data used is the *UCI Machine Learning Repository:* http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 The data for the project was downloaded from this URL and extracted into the working directory: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 That zip file contains a README.txt file that describes the data in detail.
