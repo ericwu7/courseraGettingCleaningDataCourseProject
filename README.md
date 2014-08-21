@@ -1,7 +1,7 @@
 # Course Project ReadMe
 #### run_analysis.R 
 The R script used to load and create the data set found in the file: **AvgMeanStdBySubjectActivity.txt**.
-The script assumes the following files from the **Human Activity Recognition Using Smartphones Dataset** are in the working directory.
+The script assumes the following files from the **Human Activity Recognition Using Smartphones Dataset** are in the working directory:
 - X_test.txt
 - X_train.txt
 - subject_test.txt
